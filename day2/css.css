@@ -1,0 +1,61 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.bar1, .bar2, .bar3{
+	min-width: 100px;
+	min-height:10px;
+	background-color: black;
+	margin: 10px;
+	border-radius: 10px;
+	transition: transform 0.3s ease-in-out;
+}
+
+
+.test{
+	background-color: red;
+}
+
+.animation1 {
+	transform: translate(0px, 20px) rotate(45deg);
+
+}
+
+.animation2 {
+	transform: translate(0px, -20px) rotate(-45deg);
+}
+
+.animation3 {
+	transform: rotate(360deg)
+
+}
+
+.bar2 {
+	transition: transform 20ms ifninite;
+}
