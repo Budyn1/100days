@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.one, .two, .three {
+	border-radius: 100%;
+	background-color: white;
+	position: absolute;
+	left: 50%;
+	top:50%;
+		box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.2)
+}
+
+.one {
+animation-duration: 4s;
+animation-name: big;
+animation-iteration-count: infinite;
+background-color: blue;
+	z-index:1;
+}
+
+.two {
+animation-duration: 4s;
+animation-name: middle;
+animation-iteration-count: infinite;
+background-color: white;
+	z-index:2;
+}
+
+.three {
+animation-duration: 4s;
+animation-name: small;
+animation-iteration-count: infinite;
+z-index:3;
+background-color: red;
+}
+
+@keyframes big {
+		0% {width: 0px; height: 0px;
+				margin-left:-0px; margin-top:-0px;}
+		50% {width: 130px; height: 130px;
+		margin-left:-65px; margin-top:-65px;}
+		95% {width: 0px; height: 0px;	margin-left:-0px; margin-top:-0px;}
+	}
+
+@keyframes middle {
+		10% {width: 0px; height: 0px;
+				margin-left:-0px; margin-top:-0px;}
+		50% {width: 90px; height: 90px;
+		margin-left:-45px; margin-top:-45px;}
+		80% {width: 0px; height: 0px;	margin-left:-0px; margin-top:-0px;}
+	}
+
+@keyframes small {
+		20% {width: 0px; height: 0px;
+				margin-left:-0px; margin-top:-0px;}
+		50% {width: 50px; height: 50px;
+		margin-left:-25px; margin-top:-25px;}
+		70% {width: 0px; height: 0px;	margin-left:-0px; margin-top:-0px;}
+	}
